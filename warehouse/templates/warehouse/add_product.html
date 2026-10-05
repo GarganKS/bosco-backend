@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block content %}
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Назва" required />
+    <input type="text" name="category" placeholder="Категорія" required />
+    <input type="text" name="material" placeholder="Матеріал" required />
+    <input type="text" name="brand" placeholder="Бренд" required />
+    <input
+        type="number"
+        name="price"
+        placeholder="Ціна"
+        step="0.01"
+        max="9999.99"
+        required
+    />
+    <button type="submit">Додати</button>
+</form>
+{% endblock %}

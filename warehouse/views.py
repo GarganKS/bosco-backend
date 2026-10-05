@@ -43,3 +43,24 @@ def replenish(request, count):
     models.Sports_equipment.objects.bulk_create(items)
 
     return render(request, "warehouse/replenish.html", {"count": count})
+
+
+from django.contrib import messages
+from django.shortcuts import redirect, render
+
+from . import models
+
+
+def add_product(request):
+    if request.method == "POST":
+        models.Sports_equipment.objects.create(
+            name=request.POST["name"],
+            category=request.POST["category"],
+            material=request.POST["material"],
+            brand=request.POST["brand"],
+            price=request.POST["price"],
+        )
+        messages.success(request, "Товар додано")
+        return redirect("products")
+
+    return render(request, "warehouse/add_product.html")
