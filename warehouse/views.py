@@ -11,30 +11,7 @@ from . import models
 def products(request):
     product_list = models.Sports_equipment.objects.all()
 
-    html = f"""<table>
-        <thead>
-            <tr>
-                <th>Назва</th>
-                <th>Категорія</th>
-                <th>Матеріал</th>
-                <th>Бренд</th>
-                <th>Ціна</th>
-            </tr>
-        </thead>
-        <tbody>
-        """
-    for p in product_list:
-        html += f"""<tr>
-                <td>{p.name}</td>
-                <td>{p.category}</td>
-                <td>{p.material}</td>
-                <td>{p.brand}</td>
-                <td>{p.price}</td>
-            </tr>"""
-
-    html += "</tbody></table>"
-
-    return HttpResponse(html)
+    return render(request, "warehouse/products.html", {"product_list": product_list})
 
 
 NAMES = [
@@ -59,11 +36,10 @@ def replenish(request, count):
             category=random.choice(CATEGORIES),
             material=random.choice(MATERIALS),
             brand=random.choice(BRANDS),
-            # від 1.00 до 9999.99 (вкладається в max_digits=6, decimal_places=2)
             price=Decimal(random.randint(100, 999999)) / 100,
         )
         for _ in range(count)
     ]
     models.Sports_equipment.objects.bulk_create(items)
 
-    return HttpResponse(f"Додано {count} нових записів")
+    return render(request, "warehouse/replenish.html", {"count": count})
