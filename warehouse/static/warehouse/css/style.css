@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px 20px;
+    background: #f5f6f8;
+    color: #222;
+}
+
+/* Меню */
+header {
+    background: #2c3e50;
+    padding: 14px 20px;
+    margin: 0 -20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header span {
+    color: #bdc3c7;
+    float: right;
+}
+
+hr {
+    display: none;
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e3e6ea;
+}
+
+thead th {
+    background: #34495e;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+tbody tr:hover {
+    background: #eaf2fb;
+}
