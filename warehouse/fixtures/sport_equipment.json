@@ -1,0 +1,112 @@
+[
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 1,
+    "fields": {
+      "name": "Футбольний м'яч",
+      "category": "М'ячі",
+      "material": "Поліуретан",
+      "brand": "Adidas",
+      "price": "1299.99"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 2,
+    "fields": {
+      "name": "Баскетбольний м'яч",
+      "category": "М'ячі",
+      "material": "Гума",
+      "brand": "Molten",
+      "price": "1599.50"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 3,
+    "fields": {
+      "name": "Футбольні бутси",
+      "category": "Взуття",
+      "material": "Шкіра",
+      "brand": "Nike",
+      "price": "3499.00"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 4,
+    "fields": {
+      "name": "Тенісна ракетка",
+      "category": "Ракетки",
+      "material": "Графіт",
+      "brand": "Wilson",
+      "price": "4299.99"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 5,
+    "fields": {
+      "name": "Волейбольний м'яч",
+      "category": "М'ячі",
+      "material": "Синтетична шкіра",
+      "brand": "Mikasa",
+      "price": "1899.00"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 6,
+    "fields": {
+      "name": "Йога-мат",
+      "category": "Фітнес",
+      "material": "Каучук",
+      "brand": "Reebok",
+      "price": "899.90"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 7,
+    "fields": {
+      "name": "Гантелі 5 кг",
+      "category": "Силові тренування",
+      "material": "Чавун",
+      "brand": "Titan",
+      "price": "799.99"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 8,
+    "fields": {
+      "name": "Скакалка",
+      "category": "Фітнес",
+      "material": "ПВХ",
+      "brand": "Everlast",
+      "price": "399.50"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 9,
+    "fields": {
+      "name": "Захисний шолом",
+      "category": "Захист",
+      "material": "Полікарбонат",
+      "brand": "Abus",
+      "price": "2199.00"
+    }
+  },
+  {
+    "model": "warehouse.sports_equipment",
+    "pk": 10,
+    "fields": {
+      "name": "Спортивна пляшка",
+      "category": "Аксесуари",
+      "material": "Пластик",
+      "brand": "Nike",
+      "price": "599.99"
+    }
+  }
+]
